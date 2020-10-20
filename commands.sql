@@ -28,7 +28,7 @@ SELECT * FROM <table> WHERE <column>='something in that column' AND <column>='so
 SELECT  * from <table> Limit 5;
 
 // use IN --> in returns an array of values
-SELECT from <table> WHERE <column> IN ('value', 'value', 'value');
+SELECT * from <table> WHERE <column> IN ('value', 'value', 'value');
 
 // Between Range
 SELECT * from <table> WHERE <column> BETWEEN 'some range';
