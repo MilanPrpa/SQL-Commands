@@ -24,6 +24,7 @@ SELECT * FROM <table> WHERE <column>='something in that column';
 SELECT * FROM <table> WHERE <column>='something in that column' AND <column>='some other condition';
 
 
+
 //Limit
 SELECT  * from <table> Limit 5;
 
@@ -34,3 +35,22 @@ SELECT * from <table> WHERE <column> IN ('value', 'value', 'value');
 SELECT * from <table> WHERE <column> BETWEEN 'some range';
 
 
+// Group BY && COUNT()
+SELECT <column>, COUNT(*) FROM <table> GROUP BY <column>;
+SELECT <column>, COUNT(*) FROM <table> GROUP BY <column> ORDER BY <column>;
+
+//Aggregate Stuff
+SELECT MAX(<column>) from <table>;
+SELECT MIN(<column>) from <table>;
+SELECT AVG(<column>) from <table>;
+SELECT ROUND(<column>) from <table>;
+
+// SUM
+SELECT SUM(<column>) FROM <table>;
+
+//ARITHMETIC
+SELECT 5!;
+SELECT 10 % 3;
+
+// If you want a default value when column is null, use  COALESCE
+SELECT COALESCE(<column>, <if empty, put default value here>) FROM <table>;
